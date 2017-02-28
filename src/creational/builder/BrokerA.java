@@ -1,13 +1,6 @@
 package creational.builder;
 
-public class BrokerA implements IBroker {
-
-	private String name;
-	private String surName;
-	private String streetName;
-	private String town;
-	private String country;
-	private int age;
+public class BrokerA extends AbstactBroker {
 	
 	public BrokerA(String name, String surName, String streetName, String town, String country, int age) {
 		super();
@@ -17,30 +10,6 @@ public class BrokerA implements IBroker {
 		this.town = town;
 		this.country = country;
 		this.age = age;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public String getSurName() {
-		return surName;
-	}
-
-	public String getStreetName() {
-		return streetName;
-	}
-
-	public String getTown() {
-		return town;
-	}
-
-	public String getCountry() {
-		return country;
-	}
-
-	public int getAge() {
-		return age;
 	}
 	
 	@Override

@@ -1,6 +1,6 @@
 package creational.builder;
 
-public abstract class AbstractBrokerBuilder<Builder, Broker extends IBroker> {
+public abstract class AbstractBrokerBuilder<Builder, Broker extends AbstactBroker> {
 	// the bare minimum a broker type class should have
 	
 	protected String name;

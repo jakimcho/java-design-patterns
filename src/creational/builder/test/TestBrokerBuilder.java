@@ -1,14 +1,18 @@
-package creational.builder;
+package creational.builder.test;
+
+import creational.builder.AbstactBroker;
+import creational.builder.AbstractBrokerBuilder;
+import creational.builder.BrokerABuilder;
+import creational.builder.BrokerBBuilder;
 
 public class TestBrokerBuilder {
 
 	public static void main(String[] args) {
-		IBroker broker1;
-		IBroker broker2;
+		AbstactBroker broker1;
+		AbstactBroker broker2;
 		
 		BrokerABuilder brokerABuilder = AbstractBrokerBuilder.forBrokerA();
 		BrokerBBuilder brokerBBuilder = AbstractBrokerBuilder.forBrokerB();
-		
 		
 		broker1 = brokerABuilder.withName("Gosho")
 								.withSurName("Ivanov")
@@ -26,8 +30,8 @@ public class TestBrokerBuilder {
 								.withSalary(3549.45F)
 								.build();
 		
-		System.out.println("Broker 1 " + broker1);
-		System.out.println("Broker 2 " + broker2);
+		System.out.println("\nBroker 1 " + broker1);
+		System.out.println("\nBroker 2 " + broker2);
 
 	}
 

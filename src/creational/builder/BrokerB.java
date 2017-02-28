@@ -1,13 +1,7 @@
 package creational.builder;
 
-public class BrokerB implements IBroker {
+public class BrokerB extends AbstactBroker {
 
-	private String name;
-	private String surName;
-	private String streetName;
-	private String town;
-	private String country;
-	private int age;
 	private float salary;
 	private boolean hasClients;
 	private String gender;
@@ -38,30 +32,6 @@ public class BrokerB implements IBroker {
 		return gender;
 	}
 
-	public String getName() {
-		return name;
-	}
-
-	public String getSurName() {
-		return surName;
-	}
-
-	public String getStreetName() {
-		return streetName;
-	}
-
-	public String getTown() {
-		return town;
-	}
-
-	public String getCountry() {
-		return country;
-	}
-
-	public int getAge() {
-		return age;
-	}
-	
 	@Override
 	public String toString(){
 		StringBuilder strBuilder = new StringBuilder();
