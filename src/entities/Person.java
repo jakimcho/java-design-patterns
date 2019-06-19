@@ -9,9 +9,20 @@ public class Person
 {
     private String firstName;
     private String sirName;
-    private Date birthDate;
+    private LocalDate birthDate;
     private String gender;
 
+
+    @Override
+    public String toString()
+    {
+        return "Person{" +
+               "firstName='" + firstName + '\'' +
+               ", sirName='" + sirName + '\'' +
+               ", birthDate=" + birthDate +
+               ", gender='" + gender + '\'' +
+               '}';
+    }
 
     public String getSirName()
     {
@@ -23,12 +34,12 @@ public class Person
         this.sirName = sirName;
     }
 
-    public Date getBirthDate()
+    public LocalDate getBirthDate()
     {
         return birthDate;
     }
 
-    public void setBirthDate( Date birthDate )
+    public void setBirthDate( LocalDate birthDate )
     {
         this.birthDate = birthDate;
     }
@@ -57,9 +68,7 @@ public class Person
     {
 
         LocalDate today = LocalDate.now();
-        LocalDate ldBirthday = birthDate.toInstant()
-                                        .atZone( ZoneId.systemDefault() )
-                                        .toLocalDate();
+        LocalDate ldBirthday = birthDate;
         Period p = Period.between( ldBirthday,
                                    today );
         return p.getYears();
