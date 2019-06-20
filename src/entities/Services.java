@@ -5,8 +5,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import static java.lang.StrictMath.abs;
-
 public class Services
 {
 
@@ -52,8 +50,9 @@ public class Services
         List<Company> companies = new ArrayList<>( companiesNumber );
         for ( int i = 0; i < companiesNumber; i++ )
         {
-            int employeesNumber = createRandomIntBetween(2, 50);
-            companies.add( generateCompany( employeesNumber ));
+            int employeesNumber = createRandomIntBetween( 2,
+                                                          50 );
+            companies.add( generateCompany( employeesNumber ) );
         }
 
         return companies;

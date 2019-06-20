@@ -12,6 +12,16 @@ public class Company
         this.employees.add( employee );
     }
 
+    @Override
+    public String toString()
+    {
+        return "Company{" +
+               "name='" + name + '\'' +
+               ", employees Number=" + getEmployeesNumber() +
+               ", manager=" + manager +
+               '}';
+    }
+
     public int getEmployeesNumber(){
         return this.employees.size();
     }
