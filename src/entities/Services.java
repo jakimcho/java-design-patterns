@@ -16,9 +16,9 @@ public class Services
         person.setSirName( getRandomSirName() );
         person.setGender( getRandomGender() );
         person.setBirthDate( getRandomDate() );
+        person.setJob( getRandomJob() );
         return person;
     }
-
 
     public static List<Person> generatePeople( int peopleNumber )
     {
@@ -30,7 +30,6 @@ public class Services
 
         return people;
     }
-
 
     public static Company generateCompany( int employeesNumber )
     {
@@ -58,16 +57,21 @@ public class Services
         return companies;
     }
 
-    ///////////////////////////////////////////////////////////
 
+    ///////////////////////////////////////////////////////////
     private static String getRandomCompanyName()
     {
         return getRandomElement( Data.companiesNames );
     }
 
-    private static String getRandomGender()
+    private static Gender getRandomGender()
     {
-        return getRandomElement( Data.genders );
+        return getRandomElement( Gender.values() );
+    }
+
+    private static Job getRandomJob()
+    {
+        return getRandomElement( Job.values() );
     }
 
     private static String getRandomSirName()
@@ -80,7 +84,7 @@ public class Services
         return getRandomElement( Data.firstNames );
     }
 
-    private static String getRandomElement( String[] arrData )
+    private static <T> T getRandomElement( T[] arrData )
     {
         Random rand = new Random();
         int index = rand.nextInt( arrData.length );

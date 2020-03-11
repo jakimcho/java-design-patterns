@@ -35,14 +35,6 @@ class Data
     };
 
 
-    final static String[] genders = {
-            "male",
-            "female",
-            "gender",
-            "transgender",
-            "transsexual"
-    };
-
     public static String[] companiesNames = {
             "Ciela",
             "Fadata",

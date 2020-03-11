@@ -4,14 +4,15 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.time.ZoneId;
 import java.util.Date;
+import java.util.function.Predicate;
 
 public class Person
 {
     private String firstName;
     private String sirName;
     private LocalDate birthDate;
-    private String gender;
-
+    private Gender gender;
+    private Job job;
 
     @Override
     public String toString()
@@ -20,7 +21,8 @@ public class Person
                "firstName='" + firstName + '\'' +
                ", sirName='" + sirName + '\'' +
                ", birthDate=" + birthDate +
-               ", gender='" + gender + '\'' +
+               ", gender=" + gender +
+               ", job=" + job +
                '}';
     }
 
@@ -44,14 +46,24 @@ public class Person
         this.birthDate = birthDate;
     }
 
-    public String getGender()
+    public Gender getGender()
     {
         return gender;
     }
 
-    public void setGender( String gender )
+    public void setGender( Gender gender )
     {
         this.gender = gender;
+    }
+
+    public Job getJob()
+    {
+        return job;
+    }
+
+    public void setJob( Job job )
+    {
+        this.job = job;
     }
 
     public String getFirstName()
@@ -62,6 +74,11 @@ public class Person
     public void setFirstName( String firstName )
     {
         this.firstName = firstName;
+    }
+
+    public boolean is( Predicate<Person> predicate )
+    {
+        return predicate.test( this );
     }
 
     public int getAge()

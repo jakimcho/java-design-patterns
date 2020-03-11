@@ -1,6 +1,6 @@
-package behavior.visitor.liquorshop.cahin_of_responsibility.chains;
+package behavior.cahin_of_responsibility.chains;
 
-import behavior.visitor.liquorshop.cahin_of_responsibility.data.Data;
+import behavior.cahin_of_responsibility.data.Data;
 
 /**
  * @author yakimfb

@@ -1,9 +1,9 @@
-package behavior.visitor.liquorshop.cahin_of_responsibility;
+package behavior.cahin_of_responsibility;
 
-import behavior.visitor.liquorshop.cahin_of_responsibility.chains.Calculator;
-import behavior.visitor.liquorshop.cahin_of_responsibility.data.CircleData;
-import behavior.visitor.liquorshop.cahin_of_responsibility.data.RectangleData;
-import behavior.visitor.liquorshop.cahin_of_responsibility.data.TriangleData;
+import behavior.cahin_of_responsibility.chains.Calculator;
+import behavior.cahin_of_responsibility.data.CircleData;
+import behavior.cahin_of_responsibility.data.RectangleData;
+import behavior.cahin_of_responsibility.data.TriangleData;
 
 /**
  * @author yakimfb

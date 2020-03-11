@@ -1,4 +1,4 @@
-package behavior.visitor.liquorshop.cahin_of_responsibility.data;
+package behavior.cahin_of_responsibility.data;
 
 /**
  * @author yakimfb
