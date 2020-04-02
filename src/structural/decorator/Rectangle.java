@@ -1,4 +1,4 @@
-package creational;
+package structural.decorator;
 
 public class Rectangle implements Shape {
 

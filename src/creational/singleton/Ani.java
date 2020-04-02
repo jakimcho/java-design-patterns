@@ -1,10 +1,11 @@
-package creational;
+package creational.singleton;
 
-public class Yakim {
+public class Ani {
+	
 	private SingleTon portfail;
 	
-	public Yakim(){
-		this.portfail = SingleTon.getPortfail();
+	public Ani(){
+		this.portfail = SingleTon.getWallet();
 	}
 
 	public SingleTon getPortfail() {

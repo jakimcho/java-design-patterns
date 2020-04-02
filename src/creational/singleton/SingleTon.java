@@ -1,17 +1,17 @@
-package creational;
+package creational.singleton;
 
-
+// Not thread save
 public class SingleTon {
 
-	public static SingleTon getPortfail(){
-		if (portfail == null){
-			portfail = new SingleTon();
+	public static SingleTon getWallet(){
+		if ( wallet == null){
+			wallet = new SingleTon();
 		}
 		
-		return portfail;
+		return wallet;
 	}
 	
-	private static SingleTon portfail;
+	private static SingleTon wallet;
 	
 	private SingleTon(){
 		this.balance = 10F;

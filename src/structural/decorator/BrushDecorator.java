@@ -1,4 +1,4 @@
-package creational;
+package structural.decorator;
 
 public class BrushDecorator implements ShapeDecorator {
 
