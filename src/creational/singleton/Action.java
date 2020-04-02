@@ -9,7 +9,7 @@ public class  Action {
 	public static void main(String[] args) {
 		Yakim yakim = new Yakim();
 		Ani ani = new Ani();
-		System.out.println("Protfail curr balans " + SingleTon.getWallet().getCurrentBalance());
+		System.out.println( "Protfail curr balans " + Singleton.getWallet().getCurrentBalance());
 		yakim.getPortfail().addMoney(45.5F);
 		System.out.println("Ani gleda v porfail ima " + ani.getPortfail().getCurrentBalance());
 		ani.getPortfail().takeMoney(25.45F);

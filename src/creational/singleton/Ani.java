@@ -2,17 +2,17 @@ package creational.singleton;
 
 public class Ani {
 	
-	private SingleTon portfail;
+	private Singleton portfail;
 	
 	public Ani(){
-		this.portfail = SingleTon.getWallet();
+		this.portfail = Singleton.getWallet();
 	}
 
-	public SingleTon getPortfail() {
+	public Singleton getPortfail() {
 		return portfail;
 	}
 
-	public void setPortfail(SingleTon portfail) {
+	public void setPortfail( Singleton portfail) {
 		this.portfail = portfail;
 	}
 	
