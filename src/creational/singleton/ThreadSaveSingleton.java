@@ -21,6 +21,10 @@ public class ThreadSaveSingleton
 
     public static ThreadSaveSingleton getInstance()
     {
+        if ( instance != null ){
+            return instance;
+        }
+
         synchronized ( ThreadSaveSingleton.class )
         {
             if ( instance == null )
